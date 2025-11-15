@@ -125,4 +125,5 @@ Gallery of Pics, I like to do in my free time
 <div class="image-gallery">
   <img src="{{site.baseurl}}/images/about/download.jpeg" alt="Image 1">
   <img src="{{site.baseurl}}/images/about/controllergame.jpg" alt="Image 2">
+  <img src="{{site.baseurl}}/images/about/bike.jpeg" alt="Image 3">
 </div>
