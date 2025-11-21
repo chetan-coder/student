@@ -7,10 +7,10 @@ comments: true
 
 ## As a conversation Starter
 
-Here are some places I have lived.
+Hi, my name is Chet. I am 14 years old and I really like the color blue. My favorite team is the Warriors, and I like playing video games in my free time. I also enjoy hanging out with my friends and watching basketball whenever I can. I like trying new games and learning new things, and I’m always looking for something fun to do.
 
 <comment>
-Flags are made using Wikipedia images
+
 </comment>
 
 <style>
@@ -57,14 +57,7 @@ Flags are made using Wikipedia images
     // 1. Make a connection to the HTML container defined in the HTML div
     var container = document.getElementById("grid_container"); // This container connects to the HTML div
 
-    // 2. Define a JavaScript object for our http source and our data rows for the Living in the World grid
-    var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
-    var living_in_the_world = [
-        {"flag": "0/01/Flag_of_California.svg", "greeting": "Hey", "description": "California - forever"},
-        {"flag": "b/b9/Flag_of_Oregon.svg", "greeting": "Hi", "description": "Oregon - 9 years"},
-        {"flag": "b/be/Flag_of_England.svg", "greeting": "Alright mate", "description": "England - 2 years"},
-        {"flag": "e/ef/Flag_of_Hawaii.svg", "greeting": "Aloha", "description": "Hawaii - 2 years"},
-    ];
+    
 
     // 3a. Consider how to update style count for size of container
     // The grid-template-columns has been defined as dynamic with auto-fill and minmax
@@ -102,6 +95,10 @@ Flags are made using Wikipedia images
 Here are some of the stuff I like to do in my free time
 
 - Basketball
+- Hang out for hours with my friends
+- Bike around on my e-bike
+- Play videogames with my friends
+- Scroll on TikTok
 
 ### Culture, Family, and Fun
 
@@ -117,5 +114,6 @@ Gallery of Pics, I like to do in my free time
 <div class="image-gallery">
   <img src="{{site.baseurl}}/images/about/download.jpeg" alt="Image 1">
   <img src="{{site.baseurl}}/images/about/controllergame.jpg" alt="Image 2">
-  <img src="{{site.baseurl}}/images/about/bike.jpeg" alt="Image 3">
+  <img src="{{site.baseurl}}/images/about/bike2.png" alt="Image 3">
+  <img src="{{site.baseurl}}/images/about/park.jpg" alt="Image 4">
 </div>
