@@ -7,7 +7,7 @@ comments: true
 
 ## As a conversation Starter
 
-Hi, my name is Chet. I am 14 years old and I really like the color blue. My favorite team is the Warriors, and I like playing video games in my free time. I also enjoy hanging out with my friends and watching basketball whenever I can. I like trying new games and learning new things, and I’m always looking for something fun to do.
+Hi, my name is Chet. I am usually playing videogames, outside, or taking a nap. I also mvoed here when I was 4.
 
 <comment>
 
@@ -95,18 +95,17 @@ Hi, my name is Chet. I am 14 years old and I really like the color blue. My favo
 Here are some of the stuff I like to do in my free time
 
 - Basketball
-- Hang out for hours with my friends
-- Bike around on my e-bike
+- Hang out with my friends
 - Play videogames with my friends
-- Scroll on TikTok
+- Watch TV Shows
 
 ### Culture, Family, and Fun
 
 Everything for me, as for many others, revolves around family and faith.
 
-- My mother told me that I was Danish, English. and Irish, here is my researched [family tree]({{site.baseurl}}/images/about/familytree.png)
-- My family is pretty big as I have been married twice, my 1st wife passed away.  We have had 5 kids, 4 adopted by me, 1 biological.  Plus, there are three grandkids.  My name to my grandkids is Abuilito.
-- The gallery of pics has some of my family, fun, culture and faith memories.
+- I was born in India, and mmove here when I was 4.
+- I live with my Mom, Dad, and sister here. While, the rest of my family lives in India. I usually visit them once a year.
+- The gallery of pics shows some of the things that I usually do in my free time
 
 <comment>
 Gallery of Pics, I like to do in my free time
