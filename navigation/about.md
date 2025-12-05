@@ -9,10 +9,6 @@ comments: true
 
 Hi, my name is Chet. I am usually playing videogames, outside, or taking a nap. I also mvoed here when I was 4. I started playing basketball when I was 5, and still continue playing it today. Another fact about me is that I have a sister that is 5.
 
-<comment>
-
-</comment>
-
 <style>
     /* Style looks pretty compact, 
        - grid-container and grid-item are referenced the code 
