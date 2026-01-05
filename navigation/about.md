@@ -5,37 +5,39 @@ permalink: /about/
 comments: true
 ---
 
-## As a conversation Starter
+## As a Conversation Starter
 
-Hi, my name is Chet. I am usually playing videogames, outside, or taking a nap. I also mvoed here when I was 4. I started playing basketball when I was 5, and still continue playing it today. Another fact about me is that I have a sister that is 5.
+Hi, my name is Chet. I am usually playing videogames, outside, or taking a nap.  
+I moved here when I was 4. I started playing basketball when I was 5 and still continue playing it today.  
+Another fact about me is that I have a sister who is 5 years old.
+
+---
 
 <style>
-    /* Style looks pretty compact, 
-       - grid-container and grid-item are referenced the code 
-    */
+    /* GRID STYLES */
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Dynamic columns */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 10px;
-    }
-    .grid-item {
-        text-align: center;
-    }
-    .grid-item img {
-        width: 100%;
-        height: 100px; /* Fixed height for uniformity */
-        object-fit: contain; /* Ensure the image fits within the fixed height */
-    }
-    .grid-item p {
-        margin: 5px 0; /* Add some margin for spacing */
+        margin-top: 15px;
     }
 
+    .grid-item {
+        padding: 20px;
+        text-align: center;
+        border-radius: 8px;
+        border: 1px solid;
+        font-weight: bold;
+    }
+
+    /* IMAGE GALLERY */
     .image-gallery {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
         gap: 10px;
-        }
+        margin-top: 10px;
+    }
 
     .image-gallery img {
         max-height: 150px;
@@ -44,78 +46,100 @@ Hi, my name is Chet. I am usually playing videogames, outside, or taking a nap. 
     }
 </style>
 
-<!-- This grid_container class is used by CSS styling and the id is used by JavaScript connection -->
+## 🌍 Living in the World
+
 <div class="grid-container" id="grid_container">
-    <!-- content will be added here by JavaScript -->
+    <!-- Content added by JavaScript -->
 </div>
 
 <script>
-    // 1. Make a connection to the HTML container defined in the HTML div
-    var container = document.getElementById("grid_container"); // This container connects to the HTML div
+    // Connect to the container
+    var container = document.getElementById("grid_container");
 
-    // 2. Define a JavaScript object for our http source and our data rows for the Living in the World grid
+    // Data for places lived / traveled
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var living_in_the_world = [
-        {"flag": "4/41/Flag_of_India.svg", "greeting": "Namaste", "description": "Lived in India for 4 years"},
-        {"flag": "f/f5/Flag_of_the_United_States_%281912-1959%29.svg", "greeting": "Hi", "description": "Lived in USA for 10 years"},
-        {"flag": "d/d7/Washington_State_Flag.svg", "greeting": "Hi", "description": "Traveled to Washington - 2 times"},
-        {"flag": "0/07/Flag_of_Dubai.svg", "greeting": "Hello", "description": "Travelled to Dubai - 4 times"},
+        {"flag": "4/41/Flag_of_India.svg", "description": "Lived in India for 4 years"},
+        {"flag": "f/f5/Flag_of_the_United_States_%281912-1959%29.svg", "description": "Lived in USA for 10 years"},
+        {"flag": "d/d7/Washington_State_Flag.svg", "description": "Traveled to Washington - 2 times"},
+        {"flag": "0/07/Flag_of_Dubai.svg", "description": "Traveled to Dubai - 4 times"}
     ];
 
-    // 3a. Consider how to update style count for size of container
-    // The grid-template-columns has been defined as dynamic with auto-fill and minmax
-
-    // 3b. Build grid items inside of our container for each row of data
+    // Build grid items
     for (const location of living_in_the_world) {
-        // Create a "div" with "class grid-item" for each row
         var gridItem = document.createElement("div");
-        gridItem.className = "grid-item";  // This class name connects the gridItem to the CSS style elements
-        // Add "img" HTML tag for the flag
+        gridItem.className = "grid-item";
+
         var img = document.createElement("img");
-        img.src = http_source + location.flag; // concatenate the source and flag
-        img.alt = location.flag + " Flag"; // add alt text for accessibility
+        img.src = http_source + location.flag;
+        img.style.width = "100%";
+        img.style.height = "80px";
+        img.style.objectFit = "contain";
 
-        // Add "p" HTML tag for the description
         var description = document.createElement("p");
-        description.textContent = location.description; // extract the description
+        description.textContent = location.description;
 
-        // Add "p" HTML tag for the greeting
-        var greeting = document.createElement("p");
-        greeting.textContent = location.greeting;  // extract the greeting
-
-        // Append img and p HTML tags to the grid item DIV
         gridItem.appendChild(img);
         gridItem.appendChild(description);
-        gridItem.appendChild(greeting);
-
-        // Append the grid item DIV to the container DIV
         container.appendChild(gridItem);
     }
 </script>
 
-### Journey through Life
+---
 
-Here are some of the stuff I like to do in my free time
+## 🎬 My Top 5 Favorite Netflix Shows
 
+<div class="grid-container" id="netflix_grid">
+    <!-- Netflix grid items added by JavaScript -->
+</div>
+
+<script>
+    const netflixContainer = document.getElementById("netflix_grid");
+
+    const netflixShows = [
+        "Stranger Things",
+        "All American",
+        "Ninjago",
+        "One Piece",
+        "Lost in Space"
+    ];
+
+    for (const show of netflixShows) {
+        const item = document.createElement("div");
+        item.className = "grid-item";
+        item.textContent = show;
+        netflixContainer.appendChild(item);
+    }
+</script>
+
+---
+
+## 🏀 Journey Through Life
+
+Here are some of the things I like to do in my free time:
 - Basketball
 - Hang out with my friends
 - Play videogames with my friends
-- Watch TV Shows
+- Watch TV shows
 
-### Culture, Family, and Fun
+---
+
+## 👨‍👩‍👧 Culture, Family, and Fun
 
 Everything for me, as for many others, revolves around family and faith.
 
-- I was born in India, and mmove here when I was 4.
-- I live with my Mom, Dad, and sister here. While, the rest of my family lives in India. I usually visit them once a year.
-- The gallery of pics shows some of the things that I usually do in my free time
+- I was born in India and moved here when I was 4.
+- I live with my mom, dad, and sister.
+- Most of my family lives in India, and I visit them once a year.
+- The gallery below shows some of the things I like to do in my free time.
 
 <comment>
-Gallery of Pics, I like to do in my free time
+Gallery of pics showing things I enjoy
 </comment>
+
 <div class="image-gallery">
-  <img src="{{site.baseurl}}/images/about/download.jpeg" alt="Image 1">
-  <img src="{{site.baseurl}}/images/about/controllergame.jpg" alt="Image 2">
-  <img src="{{site.baseurl}}/images/about/bike2.png" alt="Image 3">
-  <img src="{{site.baseurl}}/images/about/park.jpg" alt="Image 4">
+  <img src="{{site.baseurl}}/images/about/download.jpeg" alt="Gaming">
+  <img src="{{site.baseurl}}/images/about/controllergame.jpg" alt="Controller">
+  <img src="{{site.baseurl}}/images/about/bike2.png" alt="Bike">
+  <img src="{{site.baseurl}}/images/about/park.jpg" alt="Park">
 </div>
