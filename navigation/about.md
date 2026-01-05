@@ -53,7 +53,14 @@ Hi, my name is Chet. I am usually playing videogames, outside, or taking a nap. 
     // 1. Make a connection to the HTML container defined in the HTML div
     var container = document.getElementById("grid_container"); // This container connects to the HTML div
 
-    
+    // 2. Define a JavaScript object for our http source and our data rows for the Living in the World grid
+    var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
+    var living_in_the_world = [
+        {"flag": "4/41/Flag_of_India.svg", "greeting": "Namaste", "description": "Lived in India for 4 years"},
+        {"flag": "f/f5/Flag_of_the_United_States_%281912-1959%29.svg", "greeting": "Hi", "description": "Lived in USA for 10 years"},
+        {"flag": "d/d7/Washington_State_Flag.svg", "greeting": "Hi", "description": "Traveled to Washington - 2 times"},
+        {"flag": "0/07/Flag_of_Dubai.svg", "greeting": "Hello", "description": "Travelled to Dubai - 4 times"},
+    ];
 
     // 3a. Consider how to update style count for size of container
     // The grid-template-columns has been defined as dynamic with auto-fill and minmax
