@@ -109,7 +109,7 @@ Another fact about me is that I have a sister who is 5 years old.
         { title: "Stranger Things", image: "{{site.baseurl}}/images/netflix/download (1).jpeg" },
         { title: "All American", image: "{{site.baseurl}}/images/netflix/download (2).jpeg" },
         { title: "Ninjago", image: "{{site.baseurl}}/images/netflix/ninjago.jpeg" },
-        { title: "One Piece", image: "{{site.baseurl}}/images/netflix/download (1).jpeg" },
+        { title: "One Piece", image: "{{site.baseurl}}/images/netflix/download (4).jpeg" },
         { title: "Lost in Space", image: "{{site.baseurl}}/images/netflix/download (3).jpeg" }
     ];
 
