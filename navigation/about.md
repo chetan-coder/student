@@ -18,16 +18,24 @@ Another fact about me is that I have a sister who is 5 years old.
     .grid-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 10px;
+        gap: 12px;
         margin-top: 15px;
     }
 
     .grid-item {
-        padding: 20px;
+        padding: 10px;
         text-align: center;
         border-radius: 8px;
         border: 1px solid;
-        font-weight: bold;
+        background-color: #f9f9f9;
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 6px;
     }
 
     /* IMAGE GALLERY */
@@ -46,6 +54,8 @@ Another fact about me is that I have a sister who is 5 years old.
     }
 </style>
 
+---
+
 ## 🌍 Living in the World
 
 <div class="grid-container" id="grid_container">
@@ -53,11 +63,9 @@ Another fact about me is that I have a sister who is 5 years old.
 </div>
 
 <script>
-    // Connect to the container
     var container = document.getElementById("grid_container");
-
-    // Data for places lived / traveled
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
+
     var living_in_the_world = [
         {"flag": "4/41/Flag_of_India.svg", "description": "Lived in India for 4 years"},
         {"flag": "f/f5/Flag_of_the_United_States_%281912-1959%29.svg", "description": "Lived in USA for 10 years"},
@@ -65,16 +73,12 @@ Another fact about me is that I have a sister who is 5 years old.
         {"flag": "0/07/Flag_of_Dubai.svg", "description": "Traveled to Dubai - 4 times"}
     ];
 
-    // Build grid items
     for (const location of living_in_the_world) {
         var gridItem = document.createElement("div");
         gridItem.className = "grid-item";
 
         var img = document.createElement("img");
         img.src = http_source + location.flag;
-        img.style.width = "100%";
-        img.style.height = "80px";
-        img.style.objectFit = "contain";
 
         var description = document.createElement("p");
         description.textContent = location.description;
@@ -87,7 +91,7 @@ Another fact about me is that I have a sister who is 5 years old.
 
 ---
 
-## 🎬 My Top 5 Favorite Netflix Shows
+## 🎬 My Favorite Netflix Shows
 
 <div class="grid-container" id="netflix_grid">
     <!-- Netflix grid items added by JavaScript -->
@@ -97,17 +101,26 @@ Another fact about me is that I have a sister who is 5 years old.
     const netflixContainer = document.getElementById("netflix_grid");
 
     const netflixShows = [
-        "Stranger Things",
-        "All American",
-        "Ninjago",
-        "One Piece",
-        "Lost in Space"
+        { title: "Stranger Things", image: "{{site.baseurl}}/images/netflix/download (1).jpeg" },
+        { title: "All American", image: "{{site.baseurl}}/images/netflix/download (2).jpeg" },
+        { title: "Ninjago", image: "{{site.baseurl}}/images/netflix/ninjago.jpeg" },
+        { title: "One Piece", image: "{{site.baseurl}}/images/netflix/download (1).jpeg" },
+        { title: "Lost in Space", image: "{{site.baseurl}}/images/netflix/download (3).jpeg" }
     ];
 
     for (const show of netflixShows) {
         const item = document.createElement("div");
         item.className = "grid-item";
-        item.textContent = show;
+
+        const img = document.createElement("img");
+        img.src = show.image;
+        img.alt = show.title + " cover";
+
+        const title = document.createElement("p");
+        title.textContent = show.title;
+
+        item.appendChild(img);
+        item.appendChild(title);
         netflixContainer.appendChild(item);
     }
 </script>
@@ -117,10 +130,10 @@ Another fact about me is that I have a sister who is 5 years old.
 ## 🏀 Journey Through Life
 
 Here are some of the things I like to do in my free time:
-- Basketball
-- Hang out with my friends
-- Play videogames with my friends
-- Watch TV shows
+- Basketball  
+- Hang out with my friends  
+- Play videogames with my friends  
+- Watch TV shows  
 
 ---
 
@@ -130,7 +143,7 @@ Everything for me, as for many others, revolves around family and faith.
 
 - I was born in India and moved here when I was 4.
 - I live with my mom, dad, and sister.
-- Most of my family lives in India, and I visit them once a year.
+- Most of my family lives in India, and I usually visit them once a year.
 - The gallery below shows some of the things I like to do in my free time.
 
 <comment>
