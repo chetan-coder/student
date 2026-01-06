@@ -30,6 +30,11 @@ Another fact about me is that I have a sister who is 5 years old.
         background-color: #f9f9f9;
     }
 
+    /* FORCE GRID TEXT TO BLACK (OVERRIDES THEME) */
+    .grid-container .grid-item p {
+        color: #000 !important;
+    }
+
     .grid-item img {
         width: 100%;
         height: 120px;
