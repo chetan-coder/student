@@ -4,48 +4,48 @@ title: Nested Conditionals with Coin Flip
 permalink: /js/nestedconditionals
 ---
 
-## Nested Conditionals – Coin Flip Example
+## Nested Conditionals Example (Numbers 1–50)
 
-This example shows how nested conditionals work using a coin flip.
-The program decides who chooses first, then checks requirements using
-if statements inside other if statements.
+```js
+// Loop through numbers 1 to 50
+for (let num = 1; num <= 50; num++) {
 
-// Variables
-let tickets = 20;
-let height = 52;
-let money = 10;
-let itemInStock = true;
+    // First check: divisible by 1 (always true, but included for structure)
+    if (num % 1 === 0) {
 
-// Coin flip: 0 = heads, 1 = tails
-let coinFlip = Math.floor(Math.random() * 2);
+        // Nested check 1
+        if (num % 2 === 0) {
 
-if (coinFlip === 0) {
-    // Heads: you win the coin flip
-    // You choose to do an activity
+            // Nested check 2
+            if (num % 5 === 0) {
 
-    if (tickets >= 15) {
-        if (height >= 50) {
-            // Result: You can do the activity
+                // Nested check 3
+                if (num % 10 === 0) {
+
+                    // Nested check 4
+                    if (num % 25 === 0) {
+
+                        // Nested check 5
+                        if (num % 50 === 0) {
+                            console.log(num + " is divisible by all factors of 50 (1, 2, 5, 10, 25, 50)");
+                        } else {
+                            console.log(num + " is divisible by 1, 2, 5, 10, and 25");
+                        }
+
+                    } else {
+                        console.log(num + " is divisible by 1, 2, 5, and 10");
+                    }
+
+                } else {
+                    console.log(num + " is divisible by 1, 2, and 5");
+                }
+
+            } else {
+                console.log(num + " is divisible by 1 and 2");
+            }
+
         } else {
-            // Result: You are not tall enough
+            console.log(num + " is divisible by 1 only");
         }
-    } else {
-        // Result: Not enough tickets
-    }
-
-} else {
-    // Tails: your friend wins the coin flip
-    // Your friend chooses to buy something
-
-    if (itemInStock === true) {
-        if (money >= 8) {
-            // Result: Item was purchased
-        } else {
-            // Result: Not enough money
-        }
-    } else {
-        // Result: Item is out of stock
     }
 }
-
-// End of program
