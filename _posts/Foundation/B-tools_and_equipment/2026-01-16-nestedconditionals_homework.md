@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nested Conditionals with Coin Flip
+title: Nested Conditionals
 permalink: /js/nestedconditionals
 ---
 
