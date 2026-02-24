@@ -12,4 +12,6 @@ Data Absrtractions Homework: https://chetan-coder.github.io/student/2026/01/26/d
 
 Strings Homework: https://chetan-coder.github.io/student/2026/02/02/strings-homework.html
 
+Classes and Methods Homework: https://chetan-coder.github.io/student/2026/02/24/classes-and-methods-hw.html
+
 Iterations: Rishab, Flora, and I taught
