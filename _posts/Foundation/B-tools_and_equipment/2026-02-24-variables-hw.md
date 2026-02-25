@@ -1,7 +1,7 @@
 ---
 layout: post
 codemirror: True
-permalink: /nestedconditionalshw
+permalink: /variableshw
 ---
 
 ```python
