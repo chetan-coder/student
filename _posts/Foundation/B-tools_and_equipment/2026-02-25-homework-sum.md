@@ -1,4 +1,5 @@
 - [Nested Conditionals Homework](https://chetan-coder.github.io/student/nestedconditionalshw)
+- [Variables Homework](https://chetan-coder.github.io/student/variableshw)
 - [Arrays Homework](https://chetan-coder.github.io/student/js/arrays)
 - [Math Expressions Homework](https://chetan-coder.github.io/student/2026/01/21/math-expressions-HW.html)
 - [Booleans Homework](https://chetan-coder.github.io/student/2026/01/21/booleans-homework.html)
